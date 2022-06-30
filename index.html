@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>RocketShoes</title>
 </head>
 <body>
     <nav>
-        <img src="./assets/logo.svg" alt="">
+        <img src="./assets/logo.svg" alt="" id="logo">
         <a href="teamo"><button>MAN</button></a>
         <a href="teamo"><button>WOMAN</button></a>
         <a href="teamo"><button>CHILD</button></a>
         <a href="teamo"><button>CUSTOM</button></a>
         <div id="searchbar">
-            <img src="./assets/icon-search.svg" id="icon" alt="">
-            <input type="search" name="search" id="search" value="Search">            
+            <img src="./assets/icon-search.svg" id="searchicon" alt="">
+            <input type="search" name="search" id="search" placeholder="Search">            
         </div>
-
-        <img src="./assets/icon-bag.svg" alt="">
+        <button><img src="./assets/icon-bag.svg" alt="" id="bagicon"></button>
     </nav>
     <main>
         <div id="product">
-            <h1>Tênis Esportivo Para Corrida Top</h1>
-            <p>Esse tênis tem o intuito de te deixar ainda mais fitness, focado e musculoso.</p>
+            <h1 id="productname">Cool Sports Running Shoes</h1>
+            <p>These shoes will make you even more fitness, focused and jacked.</p>
             <p id="price">R$ 1.000,00</p>
-            <button>COMPRAR</button>
+            <button>BUY NOW</button>
         </div>
         <figure>
             <img id="imgmain" src="./assets/tenis-1-ampliado.png" alt="">
@@ -37,8 +39,12 @@
             </footer>
         </figure>
     </main>
-    <footer>
-
-    </footer>
+    <footer id="footer">
+        <img id="video" src="./assets/img-video.png"></img>
+        <a href=""><button class="social">INSTAGRAM</button></a>
+        <a href=""><button class="social">FACEBOOK</button></a>
+        <a href=""><button class="social">TWITTER</button></a>
+        <a href=""><button class="social">YOUTUBE</button></a>
+        <a href="" id="explorebox"><button id="explore">EXPLORE<img id="arrow" src="./assets/icon-arrow.svg" alt=""></button></a>
 </body>
 </html>

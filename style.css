@@ -1,9 +1,9 @@
 *{
-    border: 1px red solid;
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 main{
@@ -12,25 +12,9 @@ main{
     height: 100vh;
 }
 
-#product{
-    background-color: #E5E5E5;
-    width: 35%;
-    padding: 90px 7%;
-}
-
-h1{
-    font-size: 50px;
-}
-
-figure{
-    background-color: #C4C4C4;
-    width: 65%;
-    padding: 90px 0;
-}
-
 nav{
-    width: 100%;
-    padding: 20px 30px;
+    width: 100vw;
+    padding: 0 30px;
     position: absolute;
     top:0;
     display: flex;
@@ -40,7 +24,15 @@ nav{
 }
 
 nav button{
-    font-size: 18px;
+    padding: 20px 8px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav button:hover{
+    font-weight: 700;
 }
 
 #searchbar{
@@ -50,23 +42,50 @@ nav button{
 #search{
     height: 30px;
     border: 0;
-    padding-left: 30px;
+    padding-left: 32px;
 }
 
-#icon{
+#searchicon{
     position:absolute;
-    top:0px;
-    left: 0px;
+    top:6px;
+    left:6px;
+    width: 20px;
 }
 
-#gallery{
+#product{
+    background-color: #E5E5E5;
+    width: 35%;
+    padding: 90px 7% 130px;
     display: flex;
-    height: 30%;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#productname{
+    font-size: 3vw;
+}
+
+#price{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#product button{
+    height: 8vh;
+    width: 20.5vw;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #E5E5E5;
+}
+
+figure{
+    background-color: #C4C4C4;
+    width: 65%;
+    padding: 90px 0 130px;
 }
 
 figure img{
     margin: auto;
-    border: magenta 3px solid;
     display: block;
 }
 
@@ -74,6 +93,72 @@ figure img{
     height: 70%;
 }
 
+#gallery{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 #gallery img{
-    height: 100%;
+    height:auto;
+    max-height: 100%;
+    width: 25%;
+    object-fit: cover;
+}
+
+#img2{
+    border-bottom: #ff0000 solid 3px;
+}
+
+#footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+.social{
+    width: 15vw;
+    padding: 50px 8px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#footer button:hover{
+    font-weight: 700;
+}
+
+button{
+    border: none;
+}
+
+#video{
+    height: 120px;
+}
+
+#explore{
+    padding: 20px 8px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 20vw;
+    height: 120px;
+}
+
+#explorebox {
+    width: 20vw;
+}
+
+#arrow{
+    position: relative;
+    left: 5px;
+    top: 5px;
 }
